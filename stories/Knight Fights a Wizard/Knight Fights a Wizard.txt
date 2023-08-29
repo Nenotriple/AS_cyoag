@@ -1,0 +1,40 @@
+moment: start
+text: As you tread along the rugged path of your journey, a sudden aura of mystic energy begins to pervade the air. The whispering winds carry the scent of ancient secrets, and just as the sunlight filters through the emerald canopy, a figure materializes before you. A powerful wizard, draped in robes that seem to dance with galaxies, stands regally before you. His eyes, like pools of starlight, fixate upon you with an intensity that sends shivers down your spine. The very ground beneath your feet quivers as he locks gazes with you, his presence an unspoken challenge that blocks your way like an unyielding wall.
+image: wizard.png
+choice: Fight the wizard -> fight
+choice: Run away -> run
+
+moment: run
+text: Your heart races like a galloping stallion as the wizard's gaze pierces your soul. Instinct kicks in, and without a moment's hesitation, you pivot on your heel and bolt. Your feet pound against the earth in a frantic rhythm as the world blurs around you. The eerie laughter of the forest's hidden inhabitants echoes in the background, as if nature itself is taunting your retreat. You push your limits, fueled by equal parts fear and determination, until the wizard's presence fades like a distant memory, allowing you to catch your breath in a secluded glade.
+image: run.png
+choice: Game Over -> game_end--ran_away
+
+moment: fight
+text: A surge of adrenaline courses through your veins, and the defiant fire within you refuses to be extinguished by the wizard's imposing demeanor. With a primal roar, you draw your sword, its blade gleaming in the dappled sunlight. The clash of steel against steel reverberates through the forest as you charge towards the wizard, the force of your determination propelling you forward. The air itself seems to ripple with the energy of your clash, and the very earth trembles beneath your feet as you engage in a duel of epic proportions.
+image: fight.png
+choice: Continue fighting -> continue_fight
+choice: Surrender -> game_end--surrender
+
+moment: continue_fight
+text: Each swing of your sword is a symphony of valor, a dance of destiny, as you and the wizard engage in a battle that transcends mortal understanding. The clash of magic and steel creates a dazzling display of lights and shadows that paints the surrounding foliage in a kaleidoscope of colors. Your determination proves unyielding, and as the sun dips below the horizon, the wizard's defenses weaken. With a final, decisive blow, you strike down the once-indomitable sorcerer, his body dissipating like mist, leaving behind only the echo of his power.
+image: continue_fight.png
+choice: Explore the wizard's lair -> explore_lair
+
+moment: explore_lair
+text: The path ahead opens up to reveal an entrance, hidden in plain sight. With the wizard's magic extinguished, you step inside his lair, a place teeming with mystic artifacts and relics of forgotten epochs. Scrolls, adorned with enigmatic symbols, line the shelves, whispering promises of knowledge that could rewrite reality itself. You gingerly unroll one such scroll and feel the surge of forbidden wisdom course through your veins. The air is thick with the weight of history, and as you immerse yourself in the secrets of ages past, you become the custodian of knowledge that might have better remained concealed.
+image: explore_lair.png
+choice: End Game -> main_menu
+
+moment: game_end--surrender
+text: Your defiance crumbles in the face of the wizard's overwhelming might, and you drop your weapon, a symbol of your surrender. His gaze softens, now devoid of hostility, and the very air seems to release its tension. You find yourself bound, not by chains, but by a pact of subservience. In the heart of his sanctum, you remain, a living testament to the wizard's dominion. Each day becomes a lesson in humility and resilience, as you grapple with the knowledge that your fate is no longer your own. Yet, in the shadow of captivity, you sense a glimmer of something greater—an understanding of the cosmos that only a prisoner of magic could attain.
+image: game_end--surrender.png
+choice: Restart Game -> start
+choice: Main Menu -> main_menu
+
+moment: game_end--ran_away
+text: Ah, well look at you, the daring champion of valor and courage... not. In a stunning display of spinelessness, you decided that confronting the wizard with your feeble attempts at combat wasn't exactly on your to-do list. Nope, you went with the classic strategy of "strategic retreat," also known as "running for your life." Who needs to face magical peril head-on when you can engage in a tactical retreat, right? Your sword must be so proud of its owner for choosing to be a professional sprinter instead of, you know, a hero. The wizard probably needed a good laugh anyway, and hey, you provided the entertainment!
+image: game_end--ran_away.png
+choice: Restart Game -> start
+choice: Main Menu -> main_menu
+
+moment: main_menu
